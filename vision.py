@@ -74,12 +74,12 @@ if selected_page == "Chintu GPT V2":
     submit = st.button("Generate the Jawaab...")
 
     if submit:
-        if input:
+        if input and image:
             response = get_gemini_response(input, image)
             st.subheader("Generated jawaab....")
             st.write(response)
         else:
-            st.write("Please enter a question or ""sawaal""....")
+            st.write("Please enter a question and select any image....")
 
 elif selected_page == "About the Author":
     about_author()
