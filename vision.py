@@ -25,7 +25,7 @@ def get_gemini_response(input, image):
     return response.text
 
 
-## About the author section (replace with your details)
+## about me
 def about_author():
     author_name = "Rishi Ranjan"
     author_description = textwrap.dedent(
@@ -56,6 +56,7 @@ Let's build, innovate, and explore the limitless possibilities of technology tog
 
 
 ## Streamlit application with sidebar for navigation
+st.set_page_config(page_title="Chintu GPT V2",page_icon="1.png",layout="wide")
 st.sidebar.title("Navigation")
 selected_page = st.sidebar.radio("Select a page", ("Chintu GPT V2", "About the Author"))
 
