@@ -62,7 +62,7 @@ selected_page = st.sidebar.radio("Select a page", ("Chintu GPT V2", "About the A
 
 if selected_page == "Chintu GPT V2":
     st.header("Chintu GPT V2")
-    st.text("Chintu GPT V2 can support image along with text input.")
+    st.text("Chintu GPT V2 can support image along with text input. Input of text and the image is must.")
     st.text(" Ask any question in English, Hinglish, German, Telegu-English etc. and get the answer.")
     input = st.text_input("Ask the sawal...", key="input")
     uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
